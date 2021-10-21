@@ -15,7 +15,7 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: tsrp-web
   password: wLv7^vO1Tle0
-  host: "172.29.144.1"
+  host: "172.27.160.1"
 
 development:
   <<: *default
