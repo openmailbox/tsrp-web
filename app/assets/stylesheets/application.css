@@ -25,10 +25,13 @@ body {
 
 #body-overlay {
     background-color: rgba(0, 0, 0, 0.5);
-    min-height: 100%;
-    position: absolute !important;
 }
 
 .navbar-brand {
     max-width: 2.5em;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
 }

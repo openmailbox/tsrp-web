@@ -8,7 +8,7 @@
 }
 
 #home-postcard .carousel {
-    border: 0.9em solid rgb(236, 236, 236);
+    border: 0.8em solid rgb(236, 236, 236);
     margin-bottom: 2em;
 }
 
@@ -19,4 +19,17 @@
 #home-postcard #greetings img {
     margin: auto;
     max-width: 600px;
+}
+
+#home-cta {
+    font-size: 1.2em;
+    line-height: 2.7em;
+    height: 100%;
+    padding: 0 1.5em;
+}
+
+#home-postcard .divider {
+    margin: 0.5em auto;
+    max-width: 25em;
+    opacity: 0.8;
 }

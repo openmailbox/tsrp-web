@@ -34,7 +34,12 @@
           <a href="https://github.com/openmailbox/tsrp-web" target="_blank" class="text-light btn btn-link">Github</a>
         </section>
       </header>
+
       <%= yield %>
+
+      <footer>
+        <p>&copy; <%= DateTime.now.year %> Time Served</p>
+      </footer>
     </div>
   </body>
 </html>
