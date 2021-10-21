@@ -8,9 +8,26 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="text-light">
+    <div id="body-overlay" class="p-absolute">
+      <header class="navbar">
+        <section class="navbar-section">
+          <a href="/" class="navbar-brand">
+            <%= image_tag "/ts-logo.jpg", alt: "Los Santos", class: 'img-responsive' %>
+          </a>
+        </section>
+      </header>
+      <%= yield %>
+    </div>
   </body>
 </html>

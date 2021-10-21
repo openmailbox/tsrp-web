@@ -1,2 +1,56 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div id="home-postcard" class="container">
+  <div id="greetings" class="text-center">
+    <div class="title h1">Greetings from</div>
+    <%= image_tag "/ls-logo.png", alt: "Los Santos", class: 'img-responsive' %>
+  </div>
+  <div class="columns">
+    <div class="column col-3"></div>
+    <div class="column col-6">
+      <div class="carousel">
+        <!-- carousel locator -->
+        <input class="carousel-locator" id="slide-1" type="radio" name="carousel-radio" hidden="" checked="">
+        <input class="carousel-locator" id="slide-2" type="radio" name="carousel-radio" hidden="">
+        <input class="carousel-locator" id="slide-3" type="radio" name="carousel-radio" hidden="">
+        <input class="carousel-locator" id="slide-4" type="radio" name="carousel-radio" hidden="">
+
+        <!-- carousel container -->
+        <div class="carousel-container">
+          <!-- carousel item -->
+          <figure class="carousel-item">
+            <label class="item-prev btn btn-action btn-lg" for="slide-4"><i class="icon icon-arrow-left"></i></label>
+            <label class="item-next btn btn-action btn-lg" for="slide-2"><i class="icon icon-arrow-right"></i></label>
+            <img class="img-responsive rounded" src="https://i.imgur.com/eIWJ5pr.jpg" alt="Game Screenshot">
+          </figure>
+          <figure class="carousel-item">
+            <label class="item-prev btn btn-action btn-lg" for="slide-1"><i class="icon icon-arrow-left"></i></label>
+            <label class="item-next btn btn-action btn-lg" for="slide-3"><i class="icon icon-arrow-right"></i></label>
+            <img class="img-responsive rounded" src="https://i.imgur.com/H7ETqp6.jpg" alt="Game Screenshot">
+          </figure>
+          <figure class="carousel-item">
+            <label class="item-prev btn btn-action btn-lg" for="slide-2"><i class="icon icon-arrow-left"></i></label>
+            <label class="item-next btn btn-action btn-lg" for="slide-4"><i class="icon icon-arrow-right"></i></label>
+            <img class="img-responsive rounded" src="https://i.imgur.com/0SJgpi6.jpg" alt="Game Screenshot">
+          </figure>
+          <figure class="carousel-item">
+            <label class="item-prev btn btn-action btn-lg" for="slide-3"><i class="icon icon-arrow-left"></i></label>
+            <label class="item-next btn btn-action btn-lg" for="slide-1"><i class="icon icon-arrow-right"></i></label>
+            <img class="img-responsive rounded" src="https://i.imgur.com/w3CBahW.jpg" alt="Game Screenshot">
+          </figure>
+        </div>
+        <!-- carousel navigation -->
+        <div class="carousel-nav">
+          <label class="nav-item text-hide c-hand" for="slide-1">1</label>
+          <label class="nav-item text-hide c-hand" for="slide-2">2</label>
+          <label class="nav-item text-hide c-hand" for="slide-3">3</label>
+          <label class="nav-item text-hide c-hand" for="slide-4">4</label>
+        </div>
+      </div>
+    </div>
+    <div class="column col-3"></div>
+    <div class="column col-4"></div>
+    <div class="column col-4">
+      <p><span class="title h2">Time Served</span> is an online gaming and role playing community centered around a modded Grand Theft Auto V server using the FiveM framework.</p>
+    </div>
+    <div class="column col-4"></div>
+  </div>
+</div>
