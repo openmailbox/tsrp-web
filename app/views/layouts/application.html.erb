@@ -8,9 +8,36 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="text-light">
+    <header class="navbar">
+      <section class="navbar-section">
+        <a href="/" class="navbar-brand">
+          <%= image_tag "/ts-logo.jpg", alt: "Los Santos", class: 'img-responsive' %>
+        </a>
+        <a href="https://discord.com/invite/3ZbD9MP" target="_blank" class="btn-link">Discord</a>
+        <a href="https://wiki.timeservedrp.com/" target="_blank" class="btn-link">Wiki</a>
+        <a href="https://forums.timeservedrp.com/" target="_blank" class="btn-link">Forums</a>
+        <a href="https://github.com/openmailbox/tsrp-web" target="_blank" class="btn-link">Github</a>
+      </section>
+      <section class="navbar-section"></section>
+      <section class="navbar-section">
+      </section>
+    </header>
+
     <%= yield %>
+
+    <footer>
+      <p class="text-center">&copy; <%= DateTime.now.year %> Time Served</p>
+    </footer>
   </body>
 </html>

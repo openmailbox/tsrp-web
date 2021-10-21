@@ -1,0 +1,66 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+#home #greetings {
+    margin-bottom: 1em;
+}
+
+#home #greetings > .h1 {
+    font-family: 'Allura', cursive;
+    padding-top: 1.5em;
+}
+
+#home #greetings img {
+    margin: auto;
+    max-width: 600px;
+}
+
+#home .carousel {
+    border: 0.8em solid rgb(236, 236, 236);
+    margin-bottom: 2em;
+}
+
+#home-cta {
+    font-size: 1.2em;
+    line-height: 2.7em;
+    height: 100%;
+    margin-bottom: 1em;
+    padding: 0 1.5em;
+}
+
+#home .divider {
+    margin: 0.5em auto;
+    max-width: 25em;
+    opacity: 0.8;
+}
+
+.home-hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main.home-hero {
+    background-image: url("https://i.imgur.com/Q5QyxBy.jpg");
+}
+
+section.home-hero {
+    height: 100vh;
+}
+
+section.home-hero:nth-of-type(1) {
+    background-image: url("https://i.imgur.com/jV1gXg8.jpg");
+}
+
+section.home-hero:nth-of-type(2) {
+    background-image: url("https://i.imgur.com/tLUyceD.jpg");
+}
+
+.home-hero .hero-text {
+    margin-top: 30vh;
+}
+
+.home-hero .overlay {
+    height: 100%;
+}
