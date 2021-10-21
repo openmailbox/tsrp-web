@@ -38,6 +38,7 @@
 .home-hero {
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 main.home-hero {
@@ -57,7 +58,7 @@ section.home-hero:nth-of-type(2) {
 }
 
 .home-hero .hero-text {
-    margin-top: 35vh;
+    margin-top: 30vh;
 }
 
 .home-hero .overlay {

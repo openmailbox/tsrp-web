@@ -26,6 +26,10 @@ body {
     max-width: 2.5em;
 }
 
+header .btn-link {
+    margin-left: 1em;
+}
+
 footer {
     background: black;
     padding: 0.5em;
