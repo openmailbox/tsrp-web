@@ -15,20 +15,20 @@
  */
 
 body {
-    background: url("https://i.imgur.com/Q5QyxBy.jpg") !important;
     background-color: black !important;
-    background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
-    background-position: center !important;
-    background-size: cover !important;
 }
 
-#body-overlay {
+.overlay {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .navbar-brand {
     max-width: 2.5em;
+}
+
+footer {
+    background: black;
+    padding: 0.5em;
 }
 
 footer p {

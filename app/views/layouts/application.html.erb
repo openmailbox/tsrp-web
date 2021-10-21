@@ -19,27 +19,25 @@
   </head>
 
   <body class="text-light">
-    <div id="body-overlay" class="p-absolute">
-      <header class="navbar">
-        <section class="navbar-section">
-          <a href="/" class="navbar-brand">
-            <%= image_tag "/ts-logo.jpg", alt: "Los Santos", class: 'img-responsive' %>
-          </a>
-        </section>
-        <section class="navbar-section"></section>
-        <section class="navbar-section">
-          <a href="https://discord.com/invite/3ZbD9MP" target="_blank" class="text-light btn btn-link">Discord</a>
-          <a href="https://wiki.timeservedrp.com/" target="_blank" class="text-light btn btn-link">Wiki</a>
-          <a href="https://forums.timeservedrp.com/" target="_blank" class="text-light btn btn-link">Forums</a>
-          <a href="https://github.com/openmailbox/tsrp-web" target="_blank" class="text-light btn btn-link">Github</a>
-        </section>
-      </header>
+    <header class="navbar">
+      <section class="navbar-section">
+        <a href="/" class="navbar-brand">
+          <%= image_tag "/ts-logo.jpg", alt: "Los Santos", class: 'img-responsive' %>
+        </a>
+      </section>
+      <section class="navbar-section"></section>
+      <section class="navbar-section">
+        <a href="https://discord.com/invite/3ZbD9MP" target="_blank" class="text-light btn btn-link">Discord</a>
+        <a href="https://wiki.timeservedrp.com/" target="_blank" class="text-light btn btn-link">Wiki</a>
+        <a href="https://forums.timeservedrp.com/" target="_blank" class="text-light btn btn-link">Forums</a>
+        <a href="https://github.com/openmailbox/tsrp-web" target="_blank" class="text-light btn btn-link">Github</a>
+      </section>
+    </header>
 
-      <%= yield %>
+    <%= yield %>
 
-      <footer>
-        <p>&copy; <%= DateTime.now.year %> Time Served</p>
-      </footer>
-    </div>
+    <footer>
+      <p class="text-center">&copy; <%= DateTime.now.year %> Time Served</p>
+    </footer>
   </body>
 </html>
