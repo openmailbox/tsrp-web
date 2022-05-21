@@ -25,6 +25,7 @@ game: &game
   username: <%= ENV['TSRP_GAME_DATABASE_USERNAME'] %>
   password: <%= ENV['TSRP_GAME_DATABASE_PASSWORD'] %>
   host: <%= ENV['TSRP_GAME_DATABASE_HOST'] %>
+  replica: true
 
 development:
   primary:
