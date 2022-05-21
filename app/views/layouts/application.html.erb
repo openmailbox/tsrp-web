@@ -31,6 +31,9 @@
       </section>
       <section class="navbar-section"></section>
       <section class="navbar-section">
+        <%= form_tag('/auth/discord', method: 'post', data: {turbo: false}) do %>
+          <button type='submit' class="btn btn-link">Sign In</button>
+        <% end %>
       </section>
     </header>
 
