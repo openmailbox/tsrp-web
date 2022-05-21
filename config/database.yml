@@ -20,6 +20,7 @@ default: &default
 game: &game
   adapter: mysql2
   encoding: utf8mb4
+  database_tasks: false
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: <%= ENV['TSRP_GAME_DATABASE_USERNAME'] %>
   password: <%= ENV['TSRP_GAME_DATABASE_PASSWORD'] %>
