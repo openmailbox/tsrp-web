@@ -8,7 +8,11 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user_info = request.env['omniauth.auth']
-    redirect_to root_url, notice: "Logged in"
+    #user_info = request.env['omniauth.auth']
+    redirect_to root_url, notice: "Logged in."
+  end
+
+  def destroy
+    redirect_to root_url, notice: "Logged out."
   end
 end

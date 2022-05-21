@@ -34,6 +34,12 @@
       </section>
     </header>
 
+    <% flash.each do |type, msg| %>
+      <div class="toast">
+        <%= msg %>
+      </div>
+    <% end %>
+
     <%= yield %>
 
     <footer>
