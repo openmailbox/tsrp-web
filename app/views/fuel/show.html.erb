@@ -1,0 +1,19 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <th>Station</th>
+      <th>Fuel Level</th>
+      <th>Price</th>
+    </thead>
+
+    <tbody>
+      <% @stations.each do |station| %>
+        <tr>
+          <td><%= station.name %></td>
+          <td><%= "#{station.level_pct}%" %></td>
+          <td><%= "$#{station.cost}" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

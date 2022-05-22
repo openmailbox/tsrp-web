@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   get '/login', to: 'sessions#new'
   get '/logout', to: 'sessions#destroy'
 
+  get 'fuel', action: :show, controller: 'fuel'
+
   root 'home#index'
 end
