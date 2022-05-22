@@ -9,13 +9,13 @@ class SessionsController < ApplicationController
 
   def create
     user_info = request.env['omniauth.auth']
-    auth      = Authorization.find_by(provider: user_info.provider, uid: user_info.uid)
+    user      = User.find_or_create_from_auth(user_info)
 
-    if auth then
-      session[:current_user_id] = auth.user_id
+    if user.valid? then
+      session[:current_user_id] = user.id
       redirect_to root_url, notice: "Logged in."
     else
-      redirect_to root_url, notice: "You must join our Discord before registering on the website."
+      redirect_to root_url, notice: user.errors.where(:base).first.full_message
     end
   end
 
