@@ -31,8 +31,14 @@
       </section>
       <section class="navbar-section"></section>
       <section class="navbar-section">
-        <%= form_tag('/auth/discord', method: 'post', data: {turbo: false}) do %>
-          <button type='submit' class="btn btn-link">Sign In</button>
+        <% if @current_user then %>
+          <%= form_tag('/logout', method: 'get', data: {turbo: false}) do %>
+            <button type='submit' class="btn btn-link">Sign Out</button>
+          <% end %>
+        <% else %>
+          <%= form_tag('/auth/discord', method: 'post', data: {turbo: false}) do %>
+            <button type='submit' class="btn btn-link">Sign In</button>
+          <% end %>
         <% end %>
       </section>
     </header>
