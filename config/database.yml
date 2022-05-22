@@ -22,9 +22,9 @@ game: &game
   encoding: utf8mb4
   database_tasks: false
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: <%= ENV['TSRP_GAME_DATABASE_USERNAME'] %>
-  password: <%= ENV['TSRP_GAME_DATABASE_PASSWORD'] %>
-  host: <%= ENV['TSRP_GAME_DATABASE_HOST'] %>
+  username: <%= ENV['TSRP_DATABASE_USERNAME'] %>
+  password: <%= ENV['TSRP_DATABASE_PASSWORD'] %>
+  host: <%= ENV['TSRP_DATABASE_HOST'] %>
   replica: true
 
 development:
